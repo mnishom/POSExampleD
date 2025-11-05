@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost:3306
--- Generation Time: Oct 29, 2025 at 05:45 AM
+-- Generation Time: Nov 05, 2025 at 04:41 AM
 -- Server version: 8.4.3
 -- PHP Version: 8.3.16
 
@@ -82,6 +82,21 @@ CREATE TABLE `kategoribarang` (
   `id_kategori` int NOT NULL,
   `nama_kategori` varchar(100) COLLATE utf8mb4_general_ci NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Dumping data for table `kategoribarang`
+--
+
+INSERT INTO `kategoribarang` (`id_kategori`, `nama_kategori`) VALUES
+(1, 'Barang Elektronik'),
+(2, 'Makanan & Minuman'),
+(3, 'Peralatan Rumah Tangga'),
+(4, 'Pakaian & Aksesoris'),
+(5, 'Peralatan Kantor & ATK'),
+(6, 'Produk Grosir / Eceran'),
+(7, 'Kosmetika & Perawatan Diri'),
+(8, 'Mainan & Hobi'),
+(9, 'Produk Paket / Bundling');
 
 -- --------------------------------------------------------
 
@@ -284,7 +299,7 @@ ALTER TABLE `detailtransaksi`
 -- AUTO_INCREMENT for table `kategoribarang`
 --
 ALTER TABLE `kategoribarang`
-  MODIFY `id_kategori` int NOT NULL AUTO_INCREMENT;
+  MODIFY `id_kategori` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
 
 --
 -- AUTO_INCREMENT for table `pegawai`
